@@ -1,0 +1,40 @@
+scalar JSON
+scalar date
+type Query {
+  getAllOrderList: [order]
+  getAllInvoices: [InvoiceType]
+  getEgarness(id : Int) : EgarnessType
+}
+
+type EgarnessType{
+  ram: [String]
+}
+
+type Mutation{
+  Orderplace(orderitem: Int, quantity: Int): order
+}
+
+type facilitytype {
+  id: Int
+  address: String
+  contact: String
+}
+
+type InvoiceType {
+  id: Int
+  orderid: Int
+  facility: Int
+  costvalue: Float
+  status: String
+}
+
+type order {
+  id: Int
+  customerid: Int
+  orderitem: Int
+  quantity: Int
+  order_at: date
+  barcode: String
+  status: String
+  expected_date: date
+}

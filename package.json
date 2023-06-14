@@ -1,0 +1,33 @@
+{
+  "name": "minicaratlane",
+  "version": "1.0.0",
+  "description": "A project for mini caratlane to learn graphql indus etc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pritam",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-tools/graphql-file-loader": "^7.5.14",
+    "@graphql-tools/load": "^7.8.9",
+    "@graphql-tools/merge": "^8.3.15",
+    "@graphql-tools/schema": "^9.0.13",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "express-validator": "^6.14.3",
+    "graphql": "^15.8.0",
+    "graphql-fields-list": "^2.2.4",
+    "graphql-import": "^1.0.2",
+    "graphql-middleware": "^6.1.33",
+    "graphql-playground-middleware-express": "^1.7.23",
+    "graphql-shield": "^7.6.5",
+    "graphql-type-json": "^0.3.2",
+    "mysql2": "^3.0.1",
+    "nodemon": "^2.0.22",
+    "sequelize": "^6.28.0"
+  }
+}

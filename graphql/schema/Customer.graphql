@@ -1,0 +1,37 @@
+type Query {
+  getAllCustomer: [customer]
+  getCustomerById: customer
+  getAllItems: [items]
+  getItemById(id: Int): items
+  getAllfacility: [facilitytype]
+}
+
+type Mutation{
+  addCustomer(
+    name: String!
+    address: String!
+    contact: String!
+    email: String!
+    pincode: String!
+    state: String!
+    town: String!
+    password: String!
+  ): customer
+
+  AddFacility(
+    address: String, 
+    contact: String
+  ): facilitytype
+}
+
+type customer {
+  id: Int
+  name: String
+  address: String
+  contact: String 
+  email: String
+  pincode: String
+  state: String
+  town: String
+  
+}

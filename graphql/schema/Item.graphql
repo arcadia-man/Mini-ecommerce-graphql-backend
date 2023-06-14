@@ -1,0 +1,15 @@
+type Query {
+  getAllItems: [items]
+  getItemById(id: Int): items 
+}
+type items {
+  id: Int
+  description: String
+  cost: Float
+  filelink: String
+  assured : String
+}
+type Mutation{
+  AddItem(description: String!, cost: Float!, filelink: String): items
+  AddEditItemOfVendor(itemshave: Int!, quantity: Int): vendoritem
+}

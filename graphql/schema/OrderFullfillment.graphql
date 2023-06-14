@@ -1,0 +1,22 @@
+type Mutation{
+  AddInvoice(barcode: String): InvoiceType
+  Orderfullfillmetn(orderid: Int, barcode: String): [orderfullfillment]
+  CancleOrder(orderid: Int, barcode: String): cancleOrderType
+}
+
+type orderfullfillment {
+  id: Int
+  orderid: Int
+  vendorid: Int
+  quntityfullfillment: Int
+  orderdate: String
+  fullfillmentdate: String
+  status: Int
+  facilityaddress: String
+  error: String
+}
+
+type cancleOrderType {
+  orderid: Int
+  error: String
+}
